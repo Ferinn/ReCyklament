@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ReCyklament - Vyměňte odpad z 3D tisku za nový filament. Recyklujeme PLA a PETG. Udržitelný tisk pro hobby tiskaře i firmy.">
+    <meta name="theme-color" content="#2e7d32" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#fafafa" media="(prefers-color-scheme: light)">
+    <meta name="color-scheme" content="dark light">
+    
+    <title>ReCyklament | Recyklace filamentu pro 3D tisk</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
+    
+    <script src="script.js" defer></script>
+</head>
+<body data-theme="light"> <header class="header" id="header">
+        <div class="container">
+            <a href="#home" class="logo">
+                <span style="font-family: 'Bebas Neue', sans-serif; font-size: 2rem; color: var(--primary-color);">RE<span style="color: var(--text-color);">CYKLAMENT</span></span>
+            </a>
+            <nav class="nav" id="nav">
+                <a href="#home" class="nav-link">Domů</a>
+                <a href="#process" class="nav-link">Jak to funguje</a>
+                <a href="#products" class="nav-link">Produkty</a>
+                <a href="#impact" class="nav-link">O nás</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+            </nav>
+            <div class="header-actions">
+                <button class="btn btn-primary btn-sm" onclick="document.getElementById('cta').scrollIntoView({behavior: 'smooth'})">
+                    <i class="fas fa-leaf"></i> Začít recyklovat
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Otevřít menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>Nevyhazujte <span class="text-gradient-green">peníze do koše</span></h1>
+                        <p class="subtitle">Print Smarter, Not Harder. Váš použitý filament má stále hodnotu. Vyměňte odpad z 3D tisku za slevu na nový materiál.</p>
+                        
+                        <div class="hero-buttons">
+                            <div class="button-wrap">
+                              <button onclick="document.getElementById('process').scrollIntoView({behavior: 'smooth'})">
+                                <span><i class="fas fa-recycle"></i> Chci recyklovat</span>
+                              </button>
+                              <div class="button-shadow"></div>
+                            </div>
+                            <button class="btn btn-secondary liquid-glass" onclick="window.location.href='#eshop'">
+                                <span class="btn-content">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    Koupit filament
+                                </span>
+                            </button>
+                        </div>
+
+                        <div class="hero-stats">
+                            <div class="stat liquid-glass-card">
+                                <span class="stat-number static">PLA/PETG</span>
+                                <span class="stat-label">přijímáme</span>
+                            </div>
+                            <div class="stat liquid-glass-card">
+                                <span class="stat-number static">70/30</span>
+                                <span class="stat-label">poměr recyklátu</span>
+                            </div>
+                            <div class="stat liquid-glass-card">
+                                <span class="stat-number static">ECO</span>
+                                <span class="stat-label">udržitelnost</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hero-visual">
+                        <div class="hero-card liquid-glass-card floating-3d">
+                            <img src="Poster1.jpg" alt="ReCyklament proces" class="hero-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="process" class="section services">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Jak to <span class="text-gradient-green">funguje?</span></h2>
+                    <p>Včera odpad, dnes nový filament. Jednoduchý proces ve třech krocích.</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card liquid-glass-card fade-in">
+                        <div class="service-icon" style="color: var(--primary-color);"><i class="fas fa-box-open"></i></div>
+                        <h3>1. Sbírejte</h3>
+                        <p>Schovejte si zbytky PLA a PETG. Udržujte je co možná nejvíc oddělené podle typu a barvy.</p>
+                    </div>
+                    <div class="service-card liquid-glass-card fade-in">
+                        <div class="service-icon" style="color: var(--primary-color);"><i class="fas fa-shipping-fast"></i></div>
+                        <h3>2. Odešlete</h3>
+                        <p>Jakmile máte alespoň 1 kilogram, odešlete nám materiál přes Zásilkovnu nebo PPL.</p>
+                    </div>
+                    <div class="service-card liquid-glass-card fade-in">
+                        <div class="service-icon" style="color: var(--primary-color);"><i class="fas fa-percentage"></i></div>
+                        <h3>3. Tiskněte levněji</h3>
+                        <p>Za recyklovaný filament získejte věrnostní body, za které si zlevníte další nákupy.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="products" class="section tech-stack">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Co <span class="text-gradient-green">vykupujeme</span></h2>
+                    <p>Zaměřujeme se na nejčastější materiály v hobby i profi tisku.</p>
+                </div>
+                <div class="tech-logos">
+                    <div class="tech-logo liquid-glass-card fade-in">
+                        <div class="tech-icon"><i class="fas fa-cube"></i></div>
+                        <span>PLA</span>
+                    </div>
+                    <div class="tech-logo liquid-glass-card fade-in">
+                        <div class="tech-icon"><i class="fas fa-flask"></i></div>
+                        <span>PETG</span>
+                    </div>
+                    <div class="tech-logo liquid-glass-card fade-in">
+                        <div class="tech-icon"><i class="fas fa-layer-group"></i></div>
+                        <span>Podpěry</span>
+                    </div>
+                    <div class="tech-logo liquid-glass-card fade-in">
+                        <div class="tech-icon"><i class="fas fa-trash"></i></div>
+                        <span>Fail Prints</span>
+                    </div>
+                    <div class="tech-logo liquid-glass-card fade-in">
+                        <div class="tech-icon"><i class="fas fa-palette"></i></div>
+                        <span>Bambu Poop</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="impact" class="section about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>Proč <span class="text-gradient-green">ReCyklament</span>?</h2>
+                        <p>3D tisk generuje obrovské množství odpadu. Podpěry, nepovedené tisky, waste tower z vícebarevného tisku.</p>
+                        <p>Tento materiál dnes končí v koši, my mu vracíme hodnotu. Díky zkušenostem z analytické laboratoře garantujeme kvalitu výstupu.</p>
+                        
+                        <ul class="about-features">
+                            <li><i class="fas fa-check-circle"></i> Snížení ekologické stopy</li>
+                            <li><i class="fas fa-check-circle"></i> Levnější tisk díky věrnostním bodům</li>
+                            <li><i class="fas fa-check-circle"></i> Poměr 70/30 (recyklát/nový) pro zachování vlastností</li>
+                            <li><i class="fas fa-check-circle"></i> Podpora lokální cirkulární ekonomiky</li>
+                        </ul>
+                    </div>
+                    <div class="about-visual perspective">
+                        <div class="about-stats-grid">
+                            <div class="about-stat-card liquid-glass-card fade-in">
+                                <div class="about-stat-icon"><i class="fas fa-coins"></i></div>
+                                <div class="about-stat-number">-30%</div>
+                                <div class="about-stat-label">nákladů na tisk</div>
+                            </div>
+                            <div class="about-stat-card liquid-glass-card fade-in">
+                                <div class="about-stat-icon"><i class="fas fa-tree"></i></div>
+                                <div class="about-stat-number">100%</div>
+                                <div class="about-stat-label">využití odpadu</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cta" class="section cta-section">
+            <div class="cta-bg-elements">
+                <div class="cta-glow cta-glow-1" style="background: radial-gradient(circle, rgba(76,175,80,0.3) 0%, rgba(0,0,0,0) 70%);"></div>
+            </div>
+            <div class="container">
+                <div class="cta-content">
+                    <div class="cta-text">
+                        <h2>Jste škola nebo <span class="text-gradient-green">tiskařská firma?</span></h2>
+                        <p>Nabízíme individuální podmínky pro svoz většího množství materiálu. Zapojte se do udržitelné revoluce.</p>
+                        <div class="cta-features">
+                            <div class="cta-feature">
+                                <div class="cta-feature-icon"><i class="fas fa-truck-loading"></i></div>
+                                <div class="cta-feature-text">
+                                    <strong>Pravidelný svoz</strong>
+                                    <span>Pro objemy nad 5 kg</span>
+                                </div>
+                            </div>
+                            <div class="cta-feature">
+                                <div class="cta-feature-icon"><i class="fas fa-school"></i></div>
+                                <div class="cta-feature-text">
+                                    <strong>Program pro školy</strong>
+                                    <span>Edukace a materiál zdarma</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cta-form-wrapper">
+                        <div class="cta-form-card liquid-glass-card">
+                            <div class="cta-form-header">
+                                <h3><i class="fas fa-envelope-open-text"></i> Nezávazná poptávka</h3>
+                            </div>
+                            <form class="cta-form" id="cta-form">
+                                <div class="form-group">
+                                    <label>Váš email *</label>
+                                    <input type="email" required class="liquid-glass-input" placeholder="info@vaseskola.cz">
+                                </div>
+                                <div class="form-group">
+                                    <label>Typ organizace</label>
+                                    <select class="liquid-glass-input">
+                                        <option value="school">Škola / Vzdělávací instituce</option>
+                                        <option value="company">Tiskařská firma</option>
+                                        <option value="hobby">Hobby tiskař (velký objem)</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="cta-submit-btn" style="background: linear-gradient(90deg, #2E7D32, #4CAF50);">
+                                    <span>Odeslat poptávku</span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <a href="#home" class="footer-logo">
+                       ReCyklament
+                    </a>
+                    <p>Where your scraps become our resource.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link liquid-glass"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link liquid-glass"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Rychlé odkazy</h4>
+                    <ul>
+                        <li><a href="#process">Jak recyklovat</a></li>
+                        <li><a href="#eshop">E-shop filamentů</a></li>
+                        <li><a href="#faq">Časté dotazy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ReCyklament.cz. Všechna práva vyhrazena.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
